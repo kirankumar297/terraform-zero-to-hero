@@ -74,7 +74,7 @@ resource "aws_security_group" "example" {
   ingress {
     from_port   = 22
     to_port     = 22
-    protocol    = "tcp"
+    protocol    = "ssh"
     cidr_blocks = var.enable_ssh ? ["0.0.0.0/0"] : []
   }
 }
